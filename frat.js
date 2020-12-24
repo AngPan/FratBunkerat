@@ -42,7 +42,7 @@ function fratUpd(fratList) {
             clearInterval(inter);
             setTimeout(fratGetter, 10000);
         }
-    }, 2000);
+    }, 3000);
 
     console.log("Classifica")
     fratMap[Symbol.iterator] = function* () {
@@ -85,10 +85,15 @@ function updateChart(fratOrdinat) {
     //   );
 
     var ul = document.getElementById("fratClassif");
+    let loading;
     if (ul != null) {
         console.log("RIMUOVO");
         ul.parentNode.removeChild(ul);
+        loading = document.getElementById("loader");
+        loading.parentNode.removeChild(loading);
     }
+
+
     ul = document.createElement("ul");
     ul.setAttribute("id", "fratClassif");
     ul.setAttribute("class", "classifica");

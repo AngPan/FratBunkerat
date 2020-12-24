@@ -40,3 +40,26 @@
     font-size: 4rem;
     color: rgb(192, 163, 0);
 }
+
+.loader {
+    border: 16px solid rgb(44, 44, 44);
+    border-top: 16px solid #e07800; 
+    border-bottom: 16px solid #e07800;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .waiting-text{
+      color: #e07800;
+      text-align: center;
+      font-size: 60px;
+      font-family: "Frat";
+  }
