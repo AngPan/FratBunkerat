@@ -19,21 +19,16 @@ var fratList = [
 
 var fratMap = new Map();
 
-
-
-
 function fratGetter() {
     if (!test) {
         console.log("Update Frat");
-        setInterval(fratUpd(fratList), 50000);
+        setInterval(fratUpd(fratList), 26000);
     }
     else {
         updateChart(fratList);
     }
 
 }
-
-
 
 function fratUpd(fratList) {
 
@@ -47,7 +42,7 @@ function fratUpd(fratList) {
             clearInterval(inter);
             setTimeout(fratGetter, 10000);
         }
-    }, 5000);
+    }, 2000);
 
     console.log("Classifica")
     fratMap[Symbol.iterator] = function* () {
@@ -62,7 +57,6 @@ function fratUpd(fratList) {
     console.log("FRAT " + fratOrdinat);
     updateChart(fratOrdinat);
 }
-
 
 
 function getFrat(frat) {
@@ -80,14 +74,11 @@ function getFrat(frat) {
     $.ajax(settings).done(function (response) {
         fratMap.set(frat, response.br_all.wins)
     });
-
-
 }
 
 
-
 function updateChart(fratOrdinat) {
-    console.log("UPDADE CLASSIFICA")
+    console.log("UPDATE CLASSIFICA")
 
     // const ordered = Object.keys(fratMap).sort().reduce(
     //     (obj, key) => ({ obj[key]: fratMap[key] }), {}
