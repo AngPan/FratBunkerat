@@ -10,11 +10,10 @@ var fratList = [
     "Frankie369369",
     "MarMorr-1",
     "Adengiveashit",
-    "Fanuz1193"
-    // "mm",
-    // "as",
-    // "po",
-    // "ia"
+    "Fanuz1193",
+    "iSpeez-"
+    // "ia",
+    // "po"
 ]
 
 var fratMap = new Map();
