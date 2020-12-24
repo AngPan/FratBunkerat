@@ -1,0 +1,42 @@
+@font-face{
+    font-family: "Font";
+    src: url("font/ArmyStamp.woff") format("woff")
+    }
+@font-face{
+    font-family: "Frat";
+    src: url("font/Capture-it.woff") format("woff")
+    }
+
+
+.page{
+    background-color: rgb(44, 44, 44);
+}
+
+.logo{
+    width: 30%;
+}
+
+.title{
+    font-family: "Font";
+    color : white;
+    font-size: 150px;
+}
+
+.classifica{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    list-style-type: none;
+}
+
+.frat{
+    font-family: "Frat";
+    font-size: 3rem;
+    color: white;
+}
+
+.primo{
+    font-family: "Frat";
+    font-size: 4rem;
+    color: rgb(192, 163, 0);
+}
