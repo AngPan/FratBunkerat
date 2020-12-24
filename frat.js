@@ -5,7 +5,7 @@ var fratList = [
     "Keffys",
     "lemon93fg",
     "Wyt_Fox",
-    // "iSpeez-",
+    "DajeArmandooo",
     "juanpelull",
     "Frankie369369",
     "MarMorr-1",
