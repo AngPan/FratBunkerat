@@ -1,33 +1,34 @@
 
-var test = false;
+
 
 var fratList = [
-    "Keffys",
+    // "Keffys",
     "lemon93fg",
     "Wyt_Fox",
-    "DajeArmandooo",
-    "juanpelull",
-    "Frankie369369",
-    "MarMorr-1",
-    "Adengiveashit",
-    "Fanuz1193",
-    "iSpeez-"
+    // "DajeArmandooo",
+    // "juanpelull",
+    // "Frankie369369",
+    // "MarMorr-1",
+    // "Adengiveashit",
+    // "Fanuz1193",
+    // "iSpeez-"
     // "ia",
     // "po"
 ]
 
+
+
+
 var fratMap = new Map();
 
 function fratGetter() {
-    if (!test) {
-        console.log("Update Frat");
-        setInterval(fratUpd(fratList), 26000);
-    }
-    else {
-        updateChart(fratList);
-    }
-
+    scegliFrase();
+    console.log("get Frat");
+    // setInterval(fratUpd(fratList), 26000);
+    fratUpd(fratList);
 }
+
+
 
 function fratUpd(fratList) {
 
@@ -36,13 +37,18 @@ function fratUpd(fratList) {
 
         getFrat(fratList[i]);
         i++;
-        if (i >= fratList.length) {
+        if (i > fratList.length) {
             console.log("break");
             clearInterval(inter);
-            setTimeout(fratGetter, 10000);
+            postGet();
+            // setTimeout(fratGetter, 10000);
         }
-    }, 3000);
+    }, 3500);
 
+
+}
+
+function postGet() {
     console.log("Classifica")
     fratMap[Symbol.iterator] = function* () {
         yield* [...this.entries()].sort((a, b) => b[1] - a[1]);
@@ -77,23 +83,19 @@ function getFrat(frat) {
 
 
 function updateChart(fratOrdinat) {
-    console.log("UPDATE CLASSIFICA")
+    console.log("UPDATE CLASSIFICA");
 
-    // const ordered = Object.keys(fratMap).sort().reduce(
-    //     (obj, key) => ({ obj[key]: fratMap[key] }), {}
-    //   );
+    let loading = document.getElementById("loader");
+    loading.parentNode.removeChild(loading);
 
-    var ul = document.getElementById("fratClassif");
-    let loading;
-    if (ul != null) {
-        console.log("RIMUOVO");
-        ul.parentNode.removeChild(ul);
-        loading = document.getElementById("loader");
-        loading.parentNode.removeChild(loading);
-    }
+    // if (ul != null) {
+    //     console.log("RIMUOVO");
+    //     ul.parentNode.removeChild(ul);
+    //     loading = 
+    // }
 
 
-    ul = document.createElement("ul");
+    var ul = document.createElement("ul");
     ul.setAttribute("id", "fratClassif");
     ul.setAttribute("class", "classifica");
 
@@ -107,4 +109,29 @@ function updateChart(fratOrdinat) {
         first = false;
         ul.appendChild(li);
     });
+}
+
+function scegliFrase() {
+    let frasi = [
+        "finisco di lootare una casa con Frankie e arrivo",
+        "nel tempo che recupero i dati metto il c4 sul drone di Marco",
+        "appena andrea torna dalla ricognizione ti faccio vedere la classifica",
+        "Oh, una caramella, dammi il tempo di prenderla",
+        "nel tempo che carico, hai colpi lanciarazzi?",
+        "è inutile che aspetti, tanto non sei primo",
+        "sto rendendo warzone meglio di cold war",
+        "carico l'ultima, anche se hai fatto cacare",
+        "solo pugni?",
+        "dammi il tempo, intanto troxati",
+        "grazie per il follow amico",
+        "giusto il tempo di finire demon's souls",
+        "sto tornando da stornarella",
+        "se limone mi ridà i pantaloni posso caricare i dati"
+    ]
+
+    let lung = frasi.length + 1;
+    let txt = frasi[Math.floor(Math.random() * lung)];
+    var frase = document.getElementById("frase");
+    frase.setAttribute("class", "waiting-text")
+    frase.setAttribute('data-content', txt);
 }
