@@ -126,7 +126,8 @@ function scegliFrase() {
         "giusto il tempo di finire demon's souls",
         "sto tornando da stornarella",
         "se limone mi ridà i pantaloni posso caricare i dati",
-        "grazie per il follow amico",
+"Comodo, sarebbe comodo",
+        "grazie per il follow amico"
 
     ]
 
