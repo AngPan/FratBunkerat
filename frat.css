@@ -19,7 +19,7 @@
 .title{
     font-family: "Font";
     color : white;
-    font-size: 60px;
+    font-size: 80px;
 }
 
 .classifica{
@@ -31,7 +31,7 @@
 
 .frat{
     font-family: "Frat";
-    font-size: 35px;
+    font-size: 40px;
     color: rgb(255, 255, 255);
 }
 
@@ -60,7 +60,7 @@
   .waiting-text{
       color: #e07800;
       text-align: center;
-      font-size: 30px;
+      font-size: 50px;
       font-family: "Frat";
   }
 
