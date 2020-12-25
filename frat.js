@@ -2,16 +2,16 @@
 
 
 var fratList = [
-    // "Keffys",
+    "Keffys",
     "lemon93fg",
     "Wyt_Fox",
-    // "DajeArmandooo",
-    // "juanpelull",
-    // "Frankie369369",
-    // "MarMorr-1",
-    // "Adengiveashit",
-    // "Fanuz1193",
-    // "iSpeez-"
+    "DajeArmandooo",
+    "juanpelull",
+    "Frankie369369",
+    "MarMorr-1",
+    "Adengiveashit",
+    "Fanuz1193",
+    "iSpeez-"
     // "ia",
     // "po"
 ]
