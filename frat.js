@@ -123,13 +123,14 @@ function scegliFrase() {
         "carico l'ultima, anche se hai fatto cacare",
         "solo pugni?",
         "dammi il tempo, intanto troxati",
-        "grazie per il follow amico",
         "giusto il tempo di finire demon's souls",
         "sto tornando da stornarella",
-        "se limone mi ridà i pantaloni posso caricare i dati"
+        "se limone mi ridà i pantaloni posso caricare i dati",
+        "grazie per il follow amico",
+
     ]
 
-    let lung = frasi.length + 1;
+    let lung = frasi.length;
     let txt = frasi[Math.floor(Math.random() * lung)];
     var frase = document.getElementById("frase");
     frase.setAttribute("class", "waiting-text")
