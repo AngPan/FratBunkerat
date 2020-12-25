@@ -11,8 +11,8 @@ var fratList = [
     "MarMorr-1",
     "Adengiveashit",
     "Fanuz1193",
-    "iSpeez-"
-    // "ia",
+    "iSpeez-",
+    "StrainHunter93"
     // "po"
 ]
 
