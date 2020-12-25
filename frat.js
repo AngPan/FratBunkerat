@@ -43,7 +43,7 @@ function fratUpd(fratList) {
             postGet();
             // setTimeout(fratGetter, 10000);
         }
-    }, 3500);
+    }, 4000);
 
 
 }
@@ -131,6 +131,9 @@ function scegliFrase() {
     ]
 
     let lung = frasi.length;
+
+    console.log("NUM - " + Math.floor(Math.random() * lung));
+
     let txt = frasi[Math.floor(Math.random() * lung)];
     var frase = document.getElementById("frase");
     frase.setAttribute("class", "waiting-text")
